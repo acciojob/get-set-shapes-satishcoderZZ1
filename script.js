@@ -1,7 +1,7 @@
 //complete this code
 class Rectangle {
 	cunstructor(width, height){
-		if(width<=0 && height<=0){
+		if(width<=0 || height<=0){
 			throw new Error("Width and height must be positive integers.");
 		}
 		this.width=width;
@@ -25,7 +25,7 @@ class Square extends Animal {
 		}
 		super(side, side);
 	}
-	get Perimeter(){
+	getPerimeter(){
 		return this.width * 4;
 	}
 }
